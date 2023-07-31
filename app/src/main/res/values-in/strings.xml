@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_add_story">Masukkan cerita kamu</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Unggah</string>
+    <string name="switch_camera">Beralih kamera</string>
+    <string name="take_picture">Ambil gambar</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="image_decoration">Gambar dekorasi</string>
+    <string name="hint_email">Masukkan email kamu</string>
+    <string name="hint_password">Masukkan password kamu</string>
+    <string name="login">Masuk</string>
+    <string name="register_here">Daftar disini</string>
+    <string name="hint_name">Masukkan nama kamu</string>
+    <string name="register">Daftar</string>
+    <string name="login_here">Masuk disini</string>
+    <string name="picture_from">Gambar dari %1$s</string>
+    <string name="error">Gagal</string>
+    <string name="success">Berhasil</string>
+    <string name="picture_empty">Gambar tidak boleh kosong</string>
+    <string name="permission_required">Izin ini diperlukan</string>
+    <string name="upload_success">Unggah berhasil!</string>
+    <string name="choose_picture">Pilih gambar</string>
+    <string name="camera_failed">Gagal memunculkan kamera!</string>
+    <string name="take_picture_failed">Gagal mengambil gambar!</string>
+    <string name="required">Diperlukan</string>
+    <string name="home">Beranda</string>
+    <string name="invalid_email">Email tidak valid!</string>
+    <string name="invalid_password">Password minimal 8 karakter!</string>
+    <string name="change_languange">Ganti bahasa</string>
+    <string name="logout">Keluar</string>
+    <string name="result_empty">Hasil kosong!</string>
+    <string name="retry">Coba lagi</string>
+    <string name="style_maps_error">Parsing gaya gagal!</string>
+    <string name="location">Lokasi</string>
+    <string name="permissions_success">Semua izin berhasil diberikan</string>
+    <string name="stories_maps">Maps Cerita</string>
+    <string name="image_preview">Gambar pratinjau</string>
+</resources>

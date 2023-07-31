@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addstory.CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/btn_take_picture"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ic_take_picture_24"
+        android:scaleType="fitCenter"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/take_picture" />
+
+    <ImageButton
+        android:id="@+id/btn_switch_camera"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_cameraswitch_24"
+        app:layout_constraintBottom_toBottomOf="@id/btn_take_picture"
+        app:layout_constraintStart_toEndOf="@id/btn_take_picture"
+        app:layout_constraintTop_toTopOf="@id/btn_take_picture"
+        android:contentDescription="@string/switch_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

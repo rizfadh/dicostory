@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.addstory.AddStoryActivity">
+
+    <EditText
+        android:id="@+id/ed_add_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="top"
+        android:hint="@string/hint_add_story"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_add_story_image_preview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="3"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_add_story_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_loading"
+        android:contentDescription="@string/image_preview"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_camera"
+        app:layout_constraintTop_toBottomOf="@id/ed_add_description"
+        app:layout_constraintVertical_weight="2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <CheckBox
+        android:id="@+id/cb_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_camera"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_camera"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_add_camera" />
+
+    <Button
+        android:id="@+id/btn_add_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/camera"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_gallery"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_location"
+        app:layout_constraintTop_toBottomOf="@+id/iv_add_story_image_preview" />
+
+    <Button
+        android:id="@+id/btn_add_gallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_camera"
+        app:layout_constraintTop_toTopOf="@id/btn_add_camera" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_camera"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
